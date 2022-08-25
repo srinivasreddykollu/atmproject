@@ -18,7 +18,6 @@ public class OptionMenu extends Account {
                 System.out.println("Welcome to the ATM Services!");
                 System.out.println("Please Enter Your Account Number!");
                 setAccountNumber(menuInput.nextInt());
-
                 System.out.println("Please Enter Your Four Digit Pin!");
                 setPinNumber(menuInput.nextInt());
             } catch (Exception e) {

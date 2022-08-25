@@ -98,9 +98,9 @@ public class Account {
 
     public void getSavingDepositAmount() {
         System.out.println("current Account Balance :" + moneyFormat.format(savingBalance));
-        System.out.println("Enter Amount you want to withdraw from current Account");
+        System.out.println("Enter Amount you want to deposit from current Account");
         double amount = input.nextDouble();
-        if ((savingBalance - amount) >= 0) {
+        if ((savingBalance + amount) >= 0) {
             calcSavingsDeposit(amount);
             System.out.println("Your transaction is successful");
             System.out.println("The new saving Account Balance :" + moneyFormat.format(savingBalance));
